@@ -16,7 +16,7 @@ extract it, and place the resulting `assets` directory directly inside this
 `pipeline` directory. The required layout is:
 
 ```text
-pipeline/
+Mocha2026/
 ├── assets/
 │   ├── Best_submission.zip
 │   ├── clip-vit-base-patch32/
@@ -29,11 +29,11 @@ pipeline/
 ## Dataset
 
 Download [Google Drive](https://drive.google.com/file/d/1s5yjd4yY8GpcrdaNwZXYXr26iQGEt46Q/view?usp=sharing)
-and extract it into `data/CARE-PD-pseudo`. This is the default dataset
+and extract it into `data/`. This is the default dataset
 location used by both `train.sh` and `test.sh`:
 
 ```text
-pipeline/
+Mocha2026/
 └── data/
     ├── cache/
     └── CARE-PD-pseudo/
