@@ -31,7 +31,7 @@ pipeline/
 
 ## Dataset
 
-Download [Google Drive](https://drive.google.com/file/d/1tBL_SbSwfJ4133FRRZB5wTwLQPXvoVIc/view?usp=sharing)
+Download [Google Drive](https://drive.google.com/file/d/1s5yjd4yY8GpcrdaNwZXYXr26iQGEt46Q/view?usp=sharing)
 and extract it into `data/CARE-PD-pseudo`. This is the default dataset
 location used by both `train.sh` and `test.sh`:
 
@@ -54,13 +54,7 @@ This trains the four sources (PD-GaM, BMCLab, T-SDU-PD, and 3DGait) separately
 and merges them into the final model.
 
 ```bash
-bash train.sh
-```
-
-Custom dataset path:
-
-```bash
-bash train.sh /path/to/CARE-PD-pseudo
+bash train.sh ./data/CARE-PD-pseudo
 ```
 
 ### 2. Test
@@ -68,13 +62,13 @@ bash train.sh /path/to/CARE-PD-pseudo
 After training, evaluate true-label samples only:
 
 ```bash
-bash test.sh
+bash test.sh ./data/CARE-PD-pseudo true
 ```
 
 To evaluate both true-label and pseudo-label samples:
 
 ```bash
-bash test.sh data/CARE-PD-pseudo all
+bash test.sh ./data/CARE-PD-pseudo all
 ```
 
 ### 3. Build the submission
