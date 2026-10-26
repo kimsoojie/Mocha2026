@@ -8,9 +8,6 @@
 
 - Python 3.10+
 - PyTorch, NumPy, pandas, transformers
-- CUDA is recommended for full training; CPU is supported but slow.
-
-`CARE-PD-pseudo` must contain `llm_captions/` and `metadata.csv`.
 
 ## Assets
 
