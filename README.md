@@ -1,4 +1,4 @@
-**3rd Place Solution to the MoCha 2026 Challenge at ECCV 2026**
+# 3rd Place Solution to the MoCha 2026 Challenge at ECCV 2026
 
 <a href="https://arxiv.org/abs/2609.10187" target="_blank">
   <img src="https://img.shields.io/badge/arXiv-2609.10187-b31b1b.svg" alt="arXiv">
