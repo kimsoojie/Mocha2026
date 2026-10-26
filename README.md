@@ -1,4 +1,4 @@
-# 3rd Place Solution to the MoCha 2026 Challenge at ECCV 2026
+**3rd Place Solution to the MoCha 2026 Challenge at ECCV 2026**
 
 <a href="https://arxiv.org/abs/2609.10187" target="_blank">
   <img src="https://img.shields.io/badge/arXiv-2609.10187-b31b1b.svg" alt="arXiv">
@@ -14,7 +14,7 @@
 
 ## Assets
 
-Download the [`assets` package from Google Drive](https://drive.google.com/file/d/1stI4quzlBF0w9PCUVaN2uN2qDtfmsD7U/view?usp=sharing),
+Download the [Google Drive](https://drive.google.com/file/d/1stI4quzlBF0w9PCUVaN2uN2qDtfmsD7U/view?usp=sharing),
 extract it, and place the resulting `assets` directory directly inside this
 `pipeline` directory. The required layout is:
 
@@ -31,7 +31,7 @@ pipeline/
 
 ## Dataset
 
-Download [`CARE-PD-pseudo` from Google Drive](https://drive.google.com/file/d/1tBL_SbSwfJ4133FRRZB5wTwLQPXvoVIc/view?usp=sharing)
+Download [Google Drive](https://drive.google.com/file/d/1tBL_SbSwfJ4133FRRZB5wTwLQPXvoVIc/view?usp=sharing)
 and extract it into `data/CARE-PD-pseudo`. This is the default dataset
 location used by both `train.sh` and `test.sh`:
 
@@ -44,7 +44,9 @@ pipeline/
         └── metadata.csv
 ```
 
-You can still pass a different dataset path as the first argument.
+`data/cache/` contains one preprocessed cache for each training source: PD-GaM,
+BMCLab, T-SDU-PD, and 3DGait. Each cache stores 263-D motion sequences, sequence
+lengths, true or pseudo labels, sample metadata, and SMPL reconstruction targets.
 
 ### 1. Train
 
@@ -87,5 +89,4 @@ bash make_submission.sh
 - SCORE merging: [Bridging Domains through Subspace-Aware Model Merging](https://arxiv.org/abs/2603.05768)
 - CARE-PD project: [CARE-PD official project page](https://neurips2025.care-pd.ca/)
 - CARE-PD dataset: [Hugging Face](https://huggingface.co/datasets/vida-adl/CARE-PD/tree/main)
-
 
