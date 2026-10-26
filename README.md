@@ -45,7 +45,7 @@ pipeline/
 BMCLab, T-SDU-PD, and 3DGait. Each cache stores 263-D motion sequences, sequence
 lengths, true or pseudo labels, sample metadata, and SMPL reconstruction targets.
 
-### 1. Train
+## Train
 
 This trains the four sources (PD-GaM, BMCLab, T-SDU-PD, and 3DGait) separately
 and merges them into the final model.
@@ -54,7 +54,7 @@ and merges them into the final model.
 bash train.sh ./data/CARE-PD-pseudo
 ```
 
-### 2. Test
+## Test
 
 After training, evaluate true-label samples only:
 
@@ -68,7 +68,7 @@ To evaluate both true-label and pseudo-label samples:
 bash test.sh ./data/CARE-PD-pseudo all
 ```
 
-### 3. Build the submission
+## Build the submission
 
 ```bash
 bash make_submission.sh
